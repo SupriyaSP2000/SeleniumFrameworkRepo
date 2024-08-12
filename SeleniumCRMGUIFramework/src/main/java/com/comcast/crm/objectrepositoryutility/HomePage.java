@@ -15,18 +15,25 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(linkText="Products")
+	private WebElement productLink;
+	
 	@FindBy(linkText="Organizations")
 	private WebElement organizationLink;
 	
 	@FindBy(linkText="Contacts")
 	private WebElement contactLink;
-	
+
 	@FindBy(xpath="//img[@src=\"themes/softed/images/user.PNG\"]")
 	private WebElement administratorIcon;
 	
 	@FindBy(xpath="//a[text()='Sign Out']")
 	private WebElement signOutLink;
 	
+	
+	public WebElement getProductLink() {
+		return productLink;
+	}
 	
 	public WebElement getOrganizationLink() {
 		return organizationLink;

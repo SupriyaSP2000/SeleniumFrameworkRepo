@@ -9,4 +9,7 @@ public class ProductPage {
 
 	@FindBy(xpath="alt=\"Create Product...\"")
 	private WebElement createProductBtn;
+	
+	@FindBy(name="searchBtn")
+	private WebElement searchButton;
 }
